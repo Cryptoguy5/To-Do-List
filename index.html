@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       body {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+       }
+
+       .main {
+        height: 75%;
+        width: 35%;
+        border: 5px solid black;
+       }
+
+       h1 {
+        text-align: center;
+       }
+
+       .item {
+        margin: 20px;
+        font-size: 28px;
+       }
+
+       input {
+        margin-right: 20px;
+       }
+       
+       hr {
+        height: 2px;
+        background-color: rgb(235, 231, 231);
+       }
+
+       @media (max-width: 680px) {
+        .main {
+            width: 100%;
+        }
+       }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <h1>Moving Checklist</h1>
+        <form>
+          <div class="item"><input type="radio"><label>Buy boxes/tape/bubble wrap</label></div>
+          <hr />
+          <div class="item"><input type="radio"><label>Clean out closet + dresser</label></div>
+          <hr />
+          <div class="item"><input type="radio"><label>Double check gas/electric</label></div>
+          <hr />
+          <div class="item"><input type="radio"><label>Pick up keys!</label></div>
+          <hr />
+          <div class="item"><input type="radio"><label>Schedule movers</label></div>
+          <hr />
+    </form>
+</div>
+</body>
+</html>
